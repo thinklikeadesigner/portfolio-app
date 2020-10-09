@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
     width: 250,
     background: "#511",
-    height: "30rem",
+    height: "100%",
   },
   avatar: {
     display: "block",
@@ -77,7 +77,8 @@ const toggleSlider = (slider, open) => () => {
   const classes = useStyles();
 const sideList = slider => (
 
-      <Box className={classes.menuSliderContainer} component="div">
+      <Box className={classes.menuSliderContainer} component="div"
+      onClick={toggleSlider(slider, false)}>
         <Avatar className={classes.avatar} src={avatar} alt="Rebecca Burch " />
         <Divider />
         <List>
@@ -106,7 +107,7 @@ const sideList = slider => (
             <Typography variant="h5" style={{ color: "tan" }}>
               Portfolio
             </Typography>
-            <MobileRightMenuSlide anchor="right" open={state.right}>
+            <MobileRightMenuSlide anchor="right" onClose={toggleSlider("right", false)} open={state.right}>
 {sideList("right")}
             </MobileRightMenuSlide>
           </Toolbar>
