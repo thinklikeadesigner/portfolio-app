@@ -91,7 +91,7 @@ const sideList = slider => (
               <ListItemIcon className={classes.listItem}>
                 {lsItem.listIcon}
               </ListItemIcon>
-              <ListItemText primary={lsItem.listText}></ListItemText>
+              <ListItemText style={{ color: "tan" }} primary={lsItem.listText}></ListItemText>
             </ListItem>
           ))}
         </List>
