@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
 import MobileRightMenuSlide from "@material-ui/core/Drawer";
-
+import { makeStyles } from "@material-ui/core/styles";
 import {
   AppBar,
   Toolbar,
@@ -24,7 +25,7 @@ import {
   ContactMail,
   Block,
 } from "@material-ui/icons";
-import { makeStyles } from "@material-ui/core/styles";
+
 
 import avatar from "../avatar.png";
 
@@ -45,16 +46,19 @@ const useStyles = makeStyles((theme) => ({
   listItem: {
     color: "tan",
   },
+  listText: "tan"
 }));
 
 const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/"
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/Resume"
   },
   {
     listIcon: <Apps />,
@@ -83,7 +87,7 @@ const sideList = slider => (
         <Divider />
         <List>
           {menuItems.map((lsItem, key) => (
-            <ListItem button key={key}>
+            <ListItem button key={key} component={Link} to={lsItem.listPath} >
               <ListItemIcon className={classes.listItem}>
                 {lsItem.listIcon}
               </ListItemIcon>
