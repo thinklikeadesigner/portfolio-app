@@ -122,28 +122,52 @@ const Resume = () => {
           Learning Experience
         </Typography>
         <Box component="div" className={classes.timeline}>
-          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">2020</Typography>
+          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">October 2020</Typography>
           <Box component="div" className={classes.timeLineItem}>
 <Typography className={classes.subHeading} variant="h5" align="center">
-web design
+Front End Developer
 </Typography>
 <Typography variant="body1" align="center" style={{color: "tomato"}} >
-company name where worked
+Sideprjct Accelerator Program
 </Typography>
 <Typography variant="subtitile1" align="center" style={{color: "tan"}} >
-lorem company name where worked company name where worked company name where worked
+Part of a team of UX designers and PMs aiming to produce an MVP within 6 weeks using agile methods
 </Typography>
           </Box>
-          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">2020</Typography>
+          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">September 2020</Typography>
           <Box component="div" className={classes.timeLineItem}>
 <Typography className={classes.subHeading} variant="h5" align="center">
-web design
+Leadership
 </Typography>
 <Typography variant="body1" align="center" style={{color: "tomato"}} >
-company name where worked
+DevUX Projects
 </Typography>
 <Typography variant="subtitile1" align="center" style={{color: "tan"}} >
-lorem company name where worked company name where worked company name where worked
+Founded a growing community of UX designers and Front End Developers for the purpose of trying to create a DevOps culture relevent for UX
+</Typography>
+          </Box>
+          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">March 2020</Typography>
+          <Box component="div" className={classes.timeLineItem}>
+<Typography className={classes.subHeading} variant="h5" align="center">
+Student
+</Typography>
+<Typography variant="body1" align="center" style={{color: "tomato"}} >
+Practicum by Yandex, Fullstack Bootcamp
+</Typography>
+<Typography variant="subtitile1" align="center" style={{color: "tan"}} >
+Tech: React, Figma,  Git, Javascript,Slack, Agile Methodology, HTML5, CSS3
+</Typography>
+          </Box>
+          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">January 2020</Typography>
+          <Box component="div" className={classes.timeLineItem}>
+<Typography className={classes.subHeading} variant="h5" align="center">
+Student
+</Typography>
+<Typography variant="body1" align="center" style={{color: "tomato"}} >
+Continuing Education: building side projects
+</Typography>
+<Typography variant="subtitile1" align="center" style={{color: "tan"}} >
+Tech: Python, Docker, AWS, Flutter, Material UI, Trello, Android Studio
 </Typography>
           </Box>
         </Box>
