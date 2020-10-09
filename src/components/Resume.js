@@ -52,9 +52,9 @@ const useStyles = makeStyles((theme) => ({
         right: "0.625rem",
         top: "calc(50% - 5px)",
         borderStyle: "solid",
-         borerColor: "tomato tomato transparent transparent",
+         borderColor: "tomato tomato transparent transparent",
           borderWidth: "0.625rem",
-           transform: "rotate(45deg)",
+          transform: "rotate(45deg)",
       },
       [theme.breakpoints.up("md")]: {
           width: "44%",
@@ -102,6 +102,11 @@ heading: {
     color: "tomato",
     padding: "3rem 0",
     textTransform: "uppercase", 
+},
+subHeading: {
+    color: "white",
+    padding: "0",
+    textTransform: "uppercase", 
 }
 
 }));
@@ -118,12 +123,27 @@ const Resume = () => {
         </Typography>
         <Box component="div" className={classes.timeline}>
           <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">2020</Typography>
-          <Box component="div" >
-<Typography variant="h5" align="center">
+          <Box component="div" className={classes.timeLineItem}>
+<Typography className={classes.subHeading} variant="h5" align="center">
 web design
 </Typography>
-<Typography variant="body1" align="center">
+<Typography variant="body1" align="center" style={{color: "tomato"}} >
 company name where worked
+</Typography>
+<Typography variant="subtitile1" align="center" style={{color: "tan"}} >
+lorem company name where worked company name where worked company name where worked
+</Typography>
+          </Box>
+          <Typography className={`${classes.timeLineYear} ${classes.timeLineItem}`} variant="h2">2020</Typography>
+          <Box component="div" className={classes.timeLineItem}>
+<Typography className={classes.subHeading} variant="h5" align="center">
+web design
+</Typography>
+<Typography variant="body1" align="center" style={{color: "tomato"}} >
+company name where worked
+</Typography>
+<Typography variant="subtitile1" align="center" style={{color: "tan"}} >
+lorem company name where worked company name where worked company name where worked
 </Typography>
           </Box>
         </Box>
