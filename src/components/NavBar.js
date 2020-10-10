@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import MobileRightMenuSlide from "@material-ui/core/Drawer";
 import { makeStyles } from "@material-ui/core/styles";
+import Footer from "./Footer"
 import {
   AppBar,
   Toolbar,
@@ -115,6 +116,7 @@ const sideList = slider => (
             </Typography>
             <MobileRightMenuSlide anchor="right" onClose={toggleSlider("right", false)} open={state.right}>
 {sideList("right")}
+<Footer />
             </MobileRightMenuSlide>
           </Toolbar>
         </AppBar>
