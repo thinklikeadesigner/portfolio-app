@@ -22,12 +22,3 @@ function App() {
 export default App;
 
 
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.wrapper = React.createRef();
-  }
-  render() {
-    return <div ref={this.wrapper}>{this.props.children}</div>;
-  }
-}
