@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
    
-  <Router basename={`/portfolio-web`}>
+  <Router basename={`/portfolio-app`}>
 <App />
 </Router>, 
 
